@@ -1,0 +1,23 @@
+@import '../sass/mixins.scss';
+@import '../sass/variables.scss';
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 90px;
+    
+    nav{
+        display: flex;
+        gap: 90px;
+        align-items: center;
+        margin-right: 30px;
+        
+
+        a{
+            font-size: 28px;
+            @include nav-style;
+        }
+    }
+}
+

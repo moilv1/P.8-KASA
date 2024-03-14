@@ -1,0 +1,49 @@
+@import '../sass/mixins.scss';
+@import '../sass/variables.scss';
+
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 380px);
+    gap: 10px;
+    margin-bottom: 22px;
+    margin-top: 70px;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F7F7;
+    @include centrage-horizontal;
+    @include radius-cards;
+    
+    .card{
+        padding-left: 20px;
+        margin: 50px 20px;
+        
+
+        .card-item {
+            display: flex;
+            max-height: 255px;
+            max-width: 100%;
+            cursor: pointer;
+            
+            
+    
+            &-image {
+                height: 255px;
+                width: 300px;
+                object-fit: cover;
+                @include radius-cards;
+            }
+    
+            &-text {
+                position: absolute;
+                margin-top: 200px;
+                margin-left: 1%;
+                @include text-card-logements;
+                width: 17%;
+            }
+        }
+    }
+
+    
+}

@@ -1,0 +1,20 @@
+@import '../sass/mixins.scss';
+@import '../sass/variables.scss';
+
+
+.footer{
+    background: $black-footer-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0 15px 0;
+    gap: 25px;
+    top: 100%;
+    img{
+        width: 8.3%;
+    }
+    p{
+        color: $white-color;
+    }
+}

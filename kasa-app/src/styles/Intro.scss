@@ -1,0 +1,23 @@
+@import '../sass/mixins.scss';
+@import '../sass/variables.scss';
+
+
+.card-background{
+    position: relative;
+    margin: 50px 90px;
+    justify-content: center;
+    background-color: white;
+
+    img{
+        @include img-intro-style;
+    }
+
+    .image-text{
+        font-size: 48px;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        @include p-intro-style;
+    }
+}
+

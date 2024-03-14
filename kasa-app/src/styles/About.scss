@@ -1,0 +1,14 @@
+@import '../sass/mixins.scss';
+@import '../sass/variables.scss';
+
+
+.Img-About{
+    display: flex;
+    width: 1240px;
+    object-fit: cover;
+    height: 223px;
+    margin-left: auto;
+    margin-right: auto;
+    @include radius-cards;
+
+}
