@@ -1,0 +1,59 @@
+@import '../sass/mixins.scss';
+@import '../sass/variables.scss';
+
+.DropDownContainer{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    width: 1000px;
+    margin-bottom: 20px;
+    
+    .DropBtn{
+        position: relative;
+        background-color:#FF6060;
+        width: 100%;
+        height: 40px;
+        border-radius: 3px;
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 12px;
+        .DropBtnText{
+            color: #F6F6F6;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            font-family: montserrat;
+            display: flex;
+            align-items: center;
+        }
+    }
+    .DropDownContainerTexte {
+        background-color: #F6F6F6;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 142.6%;
+        color: #FF6060;
+        word-wrap: break-word;
+        padding-top: 0px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 0%;
+        transition: max-height 0.8s ease, opacity 0.5s ease, padding-top 0.2s ease;
+        opacity: 0;
+        max-height: 0;
+        
+        &.visible {
+            opacity: 1;
+            padding-top: 10px;
+            max-height: 3000px; 
+            transition:0.8s ease;
+        }
+    }
+}

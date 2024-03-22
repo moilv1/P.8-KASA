@@ -3,7 +3,6 @@ import Header from "./Header";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import Image404 from "../assets/404.png";
-
 import'../styles/Page404.scss';
 
 export default function Page404() {
