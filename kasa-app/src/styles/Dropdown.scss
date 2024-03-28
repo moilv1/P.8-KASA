@@ -30,6 +30,7 @@
         }
     }
     .DropDownContainerTexte {
+        display: flex;
         background-color: #F6F6F6;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
@@ -45,12 +46,13 @@
         padding-left: 30px;
         padding-right: 30px;
         margin-top: 0%;
-        transition: max-height 0.8s ease, opacity 0.5s ease, padding-top 0.2s ease;
+        transition: 0.8s ease, opacity 0.5s ease, 0.2s ease;
         opacity: 0;
         max-height: 0;
         
         
         &.visible {
+            display: flex;
             opacity: 1;
             padding-top: 10px;
             max-height: 3000px; 
@@ -59,15 +61,3 @@
     }
 }
 
-@media (max-width: 700px) {
-
-    .DropDownContainerTexte {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 142.6%;
-        color: #FF6060;
-        word-wrap: break-word;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-}
