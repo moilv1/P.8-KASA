@@ -1,0 +1,243 @@
+@import '../sass/mixins.scss';
+@import '../sass/variables.scss';
+
+.Caroussel_Container {
+    height: $base-container-height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .Caroussel_Image {
+        width: $base-image-width;
+        height: $base-image-height;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    .VectorD {
+        left: $base-vector-offset;
+        position: relative;
+        height: 80px;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .VectorG {
+        right: $base-vector-offset;
+        position: relative;
+        height: 80px;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .picture {
+        position: absolute;
+        opacity: 0;
+    }
+
+    .picture.active {
+        position: absolute;
+        opacity: 1;
+    }
+
+    .Compteur {
+        position: relative;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 142.6%;
+        text-align: center;
+        bottom: 60px;
+        color: #FFFFFF;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    @media (max-width: 1700px) {
+        height: $base-container-height;
+        .Caroussel_Image {
+            width: 1440px;
+            height: $base-image-height;
+        }
+        .VectorD {
+            left: 700px;
+        }
+        .VectorG {
+            right: 700px;
+        }
+    }
+
+    @media (max-width: 1600px) {
+        height: $base-container-height;
+        .Caroussel_Image {
+            width: 1340px;
+            height: $base-image-height;
+        }
+        .VectorD {
+            left: 650px;
+        }
+        .VectorG {
+            right: 650px;
+        }
+    }
+
+    @media (max-width: 1500px) {
+        height: $base-container-height;
+        .Caroussel_Image {
+            width: 1200px;
+            height: $base-image-height;
+        }
+        .VectorD {
+            left: 580px;
+        }
+        .VectorG {
+            right: 580px;
+        }
+    }
+
+    @media (max-width: 1400px) {
+        height: $base-container-height;
+        .Caroussel_Image {
+            width: 1120px;
+            height: $base-image-height;
+        }
+        .VectorD {
+            left: 540px;
+        }
+        .VectorG {
+            right: 540px;
+        }
+    }
+
+    @media (max-width: 1300px) {
+        height: $base-container-height;
+        .Caroussel_Image {
+            width: 1020px;
+            height: $base-image-height;
+        }
+        .VectorD {
+            left: 490px;
+        }
+        .VectorG {
+            right: 490px;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        height: $base-container-height;
+        .Caroussel_Image {
+            width: 950px;
+            height: $base-image-height;
+        }
+        .VectorD {
+            left: 460px;
+        }
+        .VectorG {
+            right: 460px;
+        }
+    }
+
+    @media (max-width: 1100px) {
+        height: $base-container-height;
+        .Caroussel_Image {
+            width: 880px;
+            height: $base-image-height;
+        }
+        .VectorD {
+            left: 420px;
+        }
+        .VectorG {
+            right: 420px;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        height: $base-container-height;
+        .Caroussel_Image {
+            width: 800px;
+            height: $base-image-height;
+        }
+        .VectorD {
+            left: 390px;
+        }
+        .VectorG {
+            right: 390px;
+        }
+    }
+
+    @media (max-width: 900px) {
+        height: $base-container-height;
+        .Caroussel_Image {
+            width: 720px;
+            height: $base-image-height;
+        }
+        .VectorD {
+            left: 340px;
+        }
+        .VectorG {
+            right: 340px;
+        }
+    }
+
+    @media (max-width: 800px) {
+        height: 400px;
+        .Caroussel_Image {
+            width: 640px;
+            height: 400px;
+        }
+        .VectorD {
+            left: 300px;
+        }
+        .VectorG {
+            right: 300px;
+        }
+    }
+
+    @media (max-width: 700px) {
+        height: 360px;
+        .Caroussel_Image {
+            width: 570px;
+            height: 360px;
+        }
+        .VectorD {
+            left: 280px;
+        }
+        .VectorG {
+            right: 280px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        height: 310px;
+        .Caroussel_Image {
+            width: 400px;
+            height: 310px;
+        }
+        .VectorD {
+            left: 190px;
+            height: 50px;
+        }
+        .VectorG {
+            right: 190px;
+            height: 50px;
+        }
+    }
+    
+    @media (max-width: 450px) {
+        height: 310px;
+        .Caroussel_Image {
+            width: 350px;
+            height: 310px;
+        }
+        .VectorD {
+            left: 170px;
+            height: 50px;
+        }
+        .VectorG {
+            right: 170px;
+            height: 50px;
+        }
+    }
+}

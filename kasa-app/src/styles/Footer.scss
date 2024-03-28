@@ -2,19 +2,35 @@
 @import '../sass/variables.scss';
 
 
-.footer{
+footer{
+    position: relative;
+    top: 100%;
+    width: 100%;
     background: $black-footer-color;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 50px 0 15px 0;
+    height: 209px;
     gap: 25px;
-    top: 100%;
+    margin-top: auto;
     img{
         width: 8.3%;
     }
     p{
         color: $white-color;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    footer{
+        img{
+            width: 122px;
+        }
+        p{
+            line-height: 17px;
+            font-size: 12px;
+        }
     }
 }

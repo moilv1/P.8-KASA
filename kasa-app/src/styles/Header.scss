@@ -2,22 +2,102 @@
 @import '../sass/variables.scss';
 
 
-header{
-    display: flex;
-    justify-content: space-between;
-    margin: 40px 90px;
-    
-    nav{
+    header{
         display: flex;
-        gap: 90px;
-        align-items: center;
-        margin-right: 30px;
+        justify-content: space-between;
+        margin: 40px 90px;
         
+        nav{
+            display: flex;
+            gap: 90px;
+            align-items: center;
+            margin-right: 30px;
+            
+    
+            a{
+                font-size: 28px;
+                @include nav-style;
+            }
+        }
+    }
 
-        a{
-            font-size: 28px;
-            @include nav-style;
+
+@media screen and (max-width: 425px) {
+    header {
+        margin: 20px;
+        height: 46.88px;
+
+        .logo-header{
+            height: 40px;
+        }
+
+        nav{
+            padding-left: 50px ;
+            gap: 50px;
+            
+            a{
+                width: 100%;
+                font-size: 12px;
+                white-space: nowrap;
+            }
         }
     }
 }
 
+@media screen and (min-width: 320px) and (max-width: 424px){
+    header{
+        padding-right: 0px;
+        .logo-header{
+            height: 35px;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        nav{
+            padding-left: 30px;
+            padding-right: 0px;
+        }
+    }
+}
+
+@media screen and  (min-width: 426px) and (max-width:768px){
+    header {
+        margin: 20px;
+        height: 46.88px;
+
+        .logo-header{
+            height: 40px;
+        }
+
+        nav{
+            padding-left: 50px ;
+            gap: 50px;
+            
+            a{
+                width: 100%;
+                font-size: 12px;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px) and (max-width:1024px){
+    header {
+        margin: 20px 0 40px 20px;
+        height: 46.88px;
+
+        .logo-header{
+            height: 50px;
+        }
+
+        nav{
+            padding-left: 50px ;
+            gap: 60px;
+            
+            a{
+                width: 100%;
+                font-size: 22px;
+                white-space: nowrap;
+            }
+        }
+    }
+}

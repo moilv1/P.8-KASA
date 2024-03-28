@@ -1,0 +1,141 @@
+@import '../sass/mixins.scss';
+@import '../sass/variables.scss';
+
+.title,
+.location,
+.tags,
+.host {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    line-height: 142.6%;
+}
+
+.title {
+    font-size: 36px;
+    color: $primary-color;
+}
+
+.location {
+    font-size: 18px;
+    color: $primary-color;
+}
+
+.tags {
+    font-size: 16px;
+    text-align: center;
+    color: $white-color;
+    border: $primary-color 10px solid;
+    padding: 0 20px 0 20px;
+    border-radius: 15px;
+    background: $primary-color;
+    list-style: none;
+}
+
+.tagsContainer {
+    display: flex;
+    gap: 20px;
+}
+
+.InfoLogementContainer {
+    margin-left: 10%;
+}
+
+.host {
+    font-size: 18px;
+    color: $primary-color;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+
+.hostImg {
+    border-radius: 100px;
+    height: 64px;
+    width: auto;
+}
+
+.InfoLogement2Container {
+    margin-right: 10%;
+}
+
+.InfoLogement2 {
+    display: flex;
+}
+
+.InfoLogementHost {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Rating {
+    margin-top: 20px;
+    transform: scale(1.2);
+}
+
+// Media Queries
+@media (max-width: 700px) {
+    .InfoLogementHost, .InfoLogement2Container {
+        flex-direction: column;
+    }
+    .InfoLogement2Container{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 200px;
+    }
+}
+
+@media (max-width: 680px) {
+    .InfoLogementHost, .InfoLogement2Container {
+        flex-direction: column;
+    }
+    .InfoLogement2Container{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 180px;
+    }
+    .Rating {
+        margin-top: 20px;
+        transform: scale(0.9);
+    }
+}
+
+@media (max-width: 650px) {
+    .InfoLogementHost, .InfoLogement2Container {
+        flex-direction: column;
+    }
+    .InfoLogement2Container{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 160px;
+    }
+}
+
+@media (max-width: 620px) {
+    .InfoLogementHost, .InfoLogement2Container {
+        flex-direction: column;
+    }
+    .InfoLogement2Container{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 130px;
+    }
+}
+
+@media (max-width: 600px) {
+    .InfoLogementHost, .InfoLogement2Container {
+        
+        flex-direction: column;
+    }
+    .InfoLogement2Container{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 80px;
+    }
+    .InfoLogement2{
+        > .host{
+            width: 80px;
+        }
+    }
+    
+}

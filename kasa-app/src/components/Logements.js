@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom';
 import logementsjson from '../logementsDATA/logements.json';
 import '../styles/Logements.scss'
 
+
 function Logements() {
 	return (
         <article className="card-container">

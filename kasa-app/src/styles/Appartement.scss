@@ -1,0 +1,29 @@
+@import '../sass/mixins.scss';
+@import '../sass/variables.scss';
+
+.LogementDropDownContainer {
+    display: flex;
+    margin: auto;
+    margin-bottom: 50px;
+    width: $base-logement-width;
+
+    > .DropDownContainer {
+        padding-left: $base-padding;
+        padding-right: $base-padding;
+    }
+
+    .equipements {
+        margin: 0;
+        padding: 0;
+    }
+
+    @media (max-width: 700px) {
+        flex-direction: column;
+            width: 100%;
+            .equipements {
+                padding-left: 20px;
+            }
+    }
+
+
+ }

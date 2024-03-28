@@ -1,0 +1,45 @@
+@import '../sass/mixins.scss';
+@import '../sass/variables.scss';
+
+.BanniereContainer {
+    border-radius: $base-border-radius;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets//IMG_info.jpg");
+    text-align: center;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    margin-top: 2%;
+    margin-left: $base-margin-horizontal;
+    margin-right: $base-margin-horizontal;
+    margin-bottom: 40px;
+
+    > p {
+        font-size: $base-font-size;
+        line-height: 142.6%;
+        color: #FFFFFF;
+        font-weight: 600;
+        
+
+        > br {
+            display: none;
+        }
+    }
+
+    @media (max-width: 865px) {
+        border-radius: $base-border-radius;
+        margin-left: 7%;
+        margin-right: 7%;
+
+        > p {
+            padding-left: 2%;
+            font-size: 24px;
+            text-align: left;
+            line-height: 110%;
+
+            > br {
+                display: block;
+            }
+        }
+    }
+}

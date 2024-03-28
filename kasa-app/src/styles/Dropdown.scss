@@ -5,7 +5,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 25px;
-    width: 1000px;
+    width: 95%;
     margin-bottom: 20px;
     
     .DropBtn{
@@ -49,11 +49,25 @@
         opacity: 0;
         max-height: 0;
         
+        
         &.visible {
             opacity: 1;
             padding-top: 10px;
             max-height: 3000px; 
             transition:0.8s ease;
         }
+    }
+}
+
+@media (max-width: 700px) {
+
+    .DropDownContainerTexte {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 142.6%;
+        color: #FF6060;
+        word-wrap: break-word;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }

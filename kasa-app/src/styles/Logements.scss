@@ -2,48 +2,146 @@
 @import '../sass/variables.scss';
 
 
-.card-container {
+.card-container{
     display: grid;
     grid-template-columns: repeat(3, 380px);
-    gap: 10px;
+    gap: 40Px;
     margin-bottom: 22px;
     margin-top: 70px;
-    padding-top: 10px;
     justify-content: center;
     align-items: center;
     background-color: #F7F7F7;
-    @include centrage-horizontal;
-    @include radius-cards;
-    
-    .card{
-        padding-left: 20px;
-        margin: 50px 20px;
-        
+    border-radius: 20px;
+    padding-left: 3%;
+    margin-left: 10%;
+    margin-right:10%;
+    padding-bottom: 3%;
+}
+.card-item{
+    display: flex;
+    border-radius: 15px;
+	max-height: 255px;
+    max-width: 100%;
+    cursor: pointer;
+    margin-top: 40px;
+}
+.card-item-image{
+    height: 255px;
+    width: 335px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.card-item-text{
+	position: absolute;
+    margin-top: 200Px;
+    margin-left: 1%;
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    width: 15%;
+}
 
-        .card-item {
-            display: flex;
-            max-height: 255px;
-            max-width: 100%;
-            cursor: pointer;
-            
-            
-    
-            &-image {
-                height: 255px;
-                width: 300px;
-                object-fit: cover;
-                @include radius-cards;
-            }
-    
-            &-text {
-                position: absolute;
-                margin-top: 200px;
-                margin-left: 1%;
-                @include text-card-logements;
-                width: 17%;
-            }
-        }
+
+
+@media (max-width:1470px) {
+    .card-container{
+        grid-template-columns: repeat(3, 340px);
+    }
+    .card-item-image{
+        width: 90%;
+    }
+}
+
+@media  (max-width:1350px) {
+    .card-container{
+        grid-template-columns: repeat(2, 380px);
+        background-color: white;
     }
 
+}
+@media (max-width:800px) {
+    .card-container{
+        margin-top: 35px;
+        background-color: white;
+    }
+    .card-container{
+        grid-template-columns: repeat(1, 380px);
+    }
+    .card-item{
+        display: flex;
+        border-radius: 15px;
+        max-height: 150px;
+        max-width: 100%;
+        cursor: pointer;
+        margin-top: 40px;
+        margin-left: 9%;
+        margin-bottom: 50px;
+    }
+    .card-item-image{
+        height: 200px;
+        width: 300Px;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+    .card-item-text{
+        position: absolute;
+        margin-top: 150Px;
+        margin-left: 1%;
+        line-height: 100%;
+        width: 35%;
+        font-size: 15px;
+    }
     
 }
+@media (max-width:400px) {
+    .card-container{
+        margin-top: 25px;
+        background-color: white;
+        grid-template-columns: repeat(1, 380px);
+        gap: 10Px;
+    }
+    .card-item{
+        display: flex;
+        border-radius: 15px;
+        max-height: 150px;
+        max-width: 100%;
+        cursor: pointer;
+        margin-top: 40px;
+        margin-left: 15.5%;
+    }
+    .card-item-image{
+        height: 150px;
+        width: 250Px;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+    .card-item-text{
+        position: absolute;
+        margin-top: 90Px;
+        margin-left: 1%;
+        line-height: 100%;
+        width:70%;
+
+    }
+    
+}
+@media screen and (max-width:375px) {
+    .card-container{
+        grid-template-columns: repeat(1, 310px);
+        gap: 10Px;
+        margin-left: 0px;
+        margin-right: 14%;
+    }
+}
+@media screen and (max-width:320px) {
+    .card-container{
+        grid-template-columns: repeat(1, 310px);
+        gap: 10Px;
+        margin-left: 0px;
+        margin-right: 14%;
+    }
+}
+
