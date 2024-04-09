@@ -14,16 +14,16 @@ export default function InfoLogement() {
     return (
         <article className='InfoLogementHost'>
             <div className='InfoLogementContainer'>
-                <div className='title'>{DataLogement.title}</div>
-                <div className='location'>{DataLogement.location}</div>
+                <h2>{DataLogement.title}</h2>
+                <p>{DataLogement.location}</p>
                 <div className='tagsContainer'>
                     {
                         DataLogement.tags &&
                         DataLogement.tags.map((tags, index) => {
                             return (
-                                <ul className='tags' key={tags + index}>
-                                    <li >{tags}</li>
-                                </ul>
+                                <span className='tags' key={tags + index}>
+                                    {tags}
+                                </span>
                             )
                         })
                     }

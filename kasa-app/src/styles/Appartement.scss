@@ -8,8 +8,7 @@
     width: $base-logement-width;
 
     > .DropDownContainer {
-        padding-left: $base-padding;
-        padding-right: $base-padding;
+        width: 80%;
     }
 
     .equipements {
@@ -26,4 +25,5 @@
     }
 
 
- }
+}
+
