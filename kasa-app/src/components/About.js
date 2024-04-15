@@ -12,6 +12,7 @@ export default function About(){
          <img className='Img-About' src={Img_About} alt='Paysage de la page "About"'></img>
          
          <div className='test'>
+        
          <Dropdown 
          title={"Fiabilité"} 
          description={"Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."}

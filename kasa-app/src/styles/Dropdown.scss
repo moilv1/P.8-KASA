@@ -32,13 +32,14 @@
         background-color: #F6F6F6;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
-        font-style: normal;
         font-weight: 400;
         font-size: 24px;
         line-height: 142.6%;
-        color: #FF6060;
+        color: black;
         margin-top: 0%;
         padding: 10px 30px;
+       
+
         
         
         &.visible {
@@ -46,6 +47,7 @@
             flex-direction: column;
             visibility: visible;
             animation: scale-in-ver-top 600ms ease-in-out ;
+            
         }
     }
 }
@@ -66,6 +68,7 @@
 @media (max-width: 425px){
     .DropDownContainer{
         margin-bottom: 20px;
+        padding-left: 0px;
         .DropBtn{
             .DropBtnText{
                 font-size: 12px;

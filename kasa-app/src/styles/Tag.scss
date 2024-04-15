@@ -1,0 +1,17 @@
+@import '../sass/mixins.scss';
+@import '../sass/variables.scss';
+
+
+.tags{
+    display: flex;
+    padding-left: 0;
+    margin: 0;
+    gap: 50px;
+    list-style-type: none;
+    color: white;
+    li{
+    padding: 0 20px 0 20px;
+    border-radius: 15px;
+    background: $primary-color;
+    }
+}

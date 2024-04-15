@@ -4,7 +4,8 @@
 .InfoLogementHost{
     .InfoLogementContainer {
         margin-left: 10%;
-        h2 {
+        
+        h1 {
             font-size: 36px;
             color: $primary-color;
         }
@@ -15,24 +16,27 @@
         
         .tagsContainer {
             display: flex;
-            gap: 20px;
+            
             .tags {
                 font-size: 18px;
                 text-align: center;
                 color: aliceblue;
                 padding: 0 30px 0px 30px;
                 border-radius: 15px;
+                white-space: nowrap;
                 background: $primary-color;
 
                 font-family: 'Montserrat';
                 font-weight: 500;
-                line-height: 142.6%;
+                
             }
         }
     
     }
     .InfoLogement2Container{
+        
         .InfoLogement2{
+            
             .host{
                 font-family: 'Montserrat';
                 font-weight: 500;
@@ -66,14 +70,14 @@
 
 
     .InfoLogementContainer{
-        h2{
+        h1{
             font-size: 16px;
         }
         p{
             font-size: 14px;
         }
         .tagsContainer{
-            width: 288px;
+            
             flex-direction: row;
             gap: 10px;
             .tags{
@@ -123,14 +127,14 @@
 @media (max-width:375px){
     .InfoLogementHost{
         .InfoLogementContainer{
-            h2{
+            h1{
                 font-size: 22px;
             }
             p{
                 font-size: 14px;
             }
             .tagsContainer{
-                width: 288px;
+                
                 flex-direction: row;
                 gap: 10px;
                 .tags{
@@ -180,19 +184,19 @@
 @media (max-width:425px){
     .InfoLogementHost{
         .InfoLogementContainer{
-            h2{
+            h1{
                 font-size: 22px;
             }
             p{
                 font-size: 14px;
             }
             .tagsContainer{
-                width: 288px;
+                
                 flex-direction: row;
                 gap: 10px;
                 .tags{
                     padding: 5px;
-                    font-size: 12px;
+                    font-size: 8px;
                 }
             }
         }
@@ -234,10 +238,10 @@
     }
 }
         
-@media (min-width:425px) and (max-width:768px){
+@media (min-width:426px) and (max-width:768px){
     .InfoLogementHost{
         .InfoLogementContainer{
-            h2{
+            h1{
                 font-size: 18px;
             }
             p{
@@ -247,7 +251,7 @@
                 flex-direction: row;
                 gap: 10px;
                 .tags{
-                    padding: 5px;
+                    padding: 5px 15px;
                     font-size: 12px;
                 }
             }
@@ -291,15 +295,21 @@
         }
     }
 }
-@media (min-width:768px) and (max-width:1440px){
+@media (min-width:769px) and (max-width:1440px){
     .InfoLogementHost{
         .InfoLogementContainer{
+            h1{
+                font-size: 22px;
+            }
+            p{
+                font-size: 16px;
+            }
             .tagsContainer{
                 flex-direction: row;
                 gap: 10px;
                 .tags{
-                    padding: 5px;
-                    font-size: 18px;
+                    padding: 5px 30px;
+                    font-size: 16px;
                 }
             }
         }
