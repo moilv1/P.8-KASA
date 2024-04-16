@@ -41,9 +41,19 @@
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
+    z-index: 9999999999999999999999999999;
     line-height: 100%;
     width: 15%;
-    
+}
+.fade{
+    border-radius: 15px;
+    position: absolute;
+    opacity: 0.3;
+    z-index: 9999999999;
+    background: black;
+    height: 255px;
+    width: 335px;
+    background-image: linear-gradient(to bottom, #ffffff, #b9b9b9, #777777, #3b3b3b, #000000);
 }
 
 
@@ -55,12 +65,32 @@
     .card-item-image{
         width: 90%;
     }
+    .fade{
+        border-radius: 15px;
+        position: absolute;
+        opacity: 0.3;
+        z-index: 9999999999;
+        background: black;
+        width: 306px;
+        height: 255px;
+        background-image: linear-gradient(to bottom, #ffffff, #b9b9b9, #777777, #3b3b3b, #000000);
+    }
 }
 
 @media  (max-width:1350px) {
     .card-container{
         grid-template-columns: repeat(2, 380px);
         background-color: white;
+    }
+    .fade{
+        border-radius: 15px;
+        position: absolute;
+        opacity: 0.3;
+        z-index: 9999999999;
+        background: black;
+        width: 342px;
+        height: 255px;
+        background-image: linear-gradient(to bottom, #ffffff, #b9b9b9, #777777, #3b3b3b, #000000);
     }
 
 }
@@ -96,6 +126,16 @@
         width: 35%;
         font-size: 15px;
     }
+    .fade{
+        border-radius: 15px;
+        position: absolute;
+        opacity: 0.3;
+        z-index: 9999999999;
+        background: black;
+        max-width: 300px;
+        height: 200px;
+        background-image: linear-gradient(to bottom, #ffffff, #b9b9b9, #777777, #3b3b3b, #000000);
+    }
     
 }
 @media (max-width:400px) {
@@ -126,7 +166,16 @@
         margin-left: 1%;
         line-height: 100%;
         width:70%;
-
+    }
+    .fade{
+        border-radius: 15px;
+        position: absolute;
+        opacity: 0.3;
+        z-index: 9999999999;
+        background: black;
+        max-width: 250px;
+        height: 150px;
+        background-image: linear-gradient(to bottom, #ffffff, #b9b9b9, #777777, #3b3b3b, #000000);
     }
     
 }
@@ -137,6 +186,16 @@
         margin-left: 0px;
         margin-right: 14%;
     }
+    .fade{
+        border-radius: 15px;
+        position: absolute;
+        opacity: 0.3;
+        z-index: 9999999999;
+        background: black;
+        max-width: 250px;
+        height: 150px;
+        background-image: linear-gradient(to bottom, #ffffff, #b9b9b9, #777777, #3b3b3b, #000000);
+    }
 }
 @media screen and (max-width:320px) {
     .card-container{
@@ -145,5 +204,16 @@
         margin-left: 0px;
         margin-right: 14%;
     }
+    .fade{
+        border-radius: 15px;
+        position: absolute;
+        opacity: 0.3;
+        z-index: 9999999999;
+        background: black;
+        max-width: 250px;
+        height: 150px;
+        background-image: linear-gradient(to bottom, #ffffff, #b9b9b9, #777777, #3b3b3b, #000000);
+    }
+    
 }
 
