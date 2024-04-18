@@ -2,466 +2,245 @@
 @import '../sass/variables.scss';
 
 .InfoLogementHost{
+    margin-left: 7%;
+    
     .InfoLogementContainer {
-        margin-left: 10%;
+        font-weight: 500;
         
         h1 {
-            font-size: 36px;
+            font-size: 18px;
             color: $primary-color;
+            font-weight: 500;
+            width: 80%;
         }
         p{
+            font-size: 14px;
             color: black;
         }
 
         
         .tagsContainer {
             display: flex;
-            
-            .tags {
-                font-size: 18px;
+            flex-direction: row;
+            gap: 2px;
+            .tag {
+                font-size: 10px;
                 text-align: center;
-                color: aliceblue;
-                padding: 0 30px 0px 30px;
-                border-radius: 15px;
+                align-items: center;
+                color: white;
+                padding: 2.5px;
+                border-radius: 5px;
                 white-space: nowrap;
                 background: $primary-color;
-
                 font-family: 'Montserrat';
                 font-weight: 500;
-                
+                line-height: 15px;
             }
         }
     
     }
     .InfoLogement2Container{
+        display: flex;
+        margin-top: 30px;
+        flex-direction: row-reverse;
+        justify-content: space-between;
         
+        align-items: center;
+        margin-right: 9%;
+
         .InfoLogement2{
-            
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 5px;
             .host{
                 font-family: 'Montserrat';
                 font-weight: 500;
-                line-height: 142.6%;
+                font-size: 12px;
                 color: $primary-color;
             }
             .hostImg {
                 border-radius: 100px;
-                height: 64px;
+                height: 40px;
                 width: auto;
+                
             }
         }
         .Rating{
             transform: scale(1.0);
+            align-items: center;
         }
     }
 }
-
-
-
-
-
-
 
 // Media Queries
-
-@media (min-width:320px){
-.InfoLogementHost{
-    display: flex;
-    flex-direction: column;
-
-
-    .InfoLogementContainer{
-        h1{
-            font-size: 16px;
-        }
-        p{
-            font-size: 14px;
-        }
-        .tagsContainer{
-            
-            flex-direction: row;
-            gap: 10px;
-            .tags{
-                padding: 5px;
-                font-size: 12px;
-            }
-        }
-    }
-
-
-    .InfoLogement2Container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row-reverse;
-
-
-        .InfoLogement2{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 20px;
-            margin-right: 20px;
-            gap: 5px;
-            .hostImg{
-                width: 38px;
-                height: 38px;
-            }
-            .host{
-                line-height: 17.11px;
-                font-size: 14px;
-            }
-        }
-
-        .Rating{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transform: scale(0.6);
-            padding-top: 20px;
-            
-        }
-    }
-}
-}
-
-@media (max-width:375px){
+@media (min-width:601px) {
     .InfoLogementHost{
-        .InfoLogementContainer{
-            h1{
+        margin-left: 9%;
+        margin-right: 5%;
+        .InfoLogementContainer {
+            h1 {
                 font-size: 22px;
             }
             p{
-                font-size: 14px;
+                font-size: 16px;
             }
-            .tagsContainer{
-                
-                flex-direction: row;
-                gap: 10px;
-                .tags{
-                    padding: 5px;
-                    font-size: 12px;
+            .tagsContainer {
+                gap: 5px;
+                .tag {
+                    font-size: 16px;
+                    padding: 3px 10px;
                 }
             }
         }
-
-
         .InfoLogement2Container{
             display: flex;
-            justify-content: center;
-            align-items: center;
+            margin-top: 30px;
             flex-direction: row-reverse;
-    
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 7%;
     
             .InfoLogement2{
                 display: flex;
-                justify-content: center;
+                flex-direction: row;
                 align-items: center;
-                margin-top: 20px;
-                margin-right: 20px;
                 gap: 5px;
-                .hostImg{
-                    width: 42px;
-                    height: 42px;
-                }
                 .host{
-                    line-height: 17.11px;
+                    font-family: 'Montserrat';
+                    font-weight: 500;
                     font-size: 14px;
+                    color: $primary-color;
+                }
+                .hostImg {
+                    border-radius: 100px;
+                    height: 40px;
+                    width: auto;
                 }
             }
-    
             .Rating{
-                display: flex;
-                justify-content: center;
+                transform: scale(1.0);
                 align-items: center;
-                transform: scale(0.7);
-                padding-top: 20px;
-                
             }
         }
     }
 }
 
-@media (max-width:425px){
+@media (min-width:1024px) {
     .InfoLogementHost{
-        .InfoLogementContainer{
-            h1{
-                font-size: 22px;
-            }
-            p{
-                font-size: 14px;
-            }
-            .tagsContainer{
-                
-                flex-direction: row;
-                gap: 10px;
-                .tags{
-                    padding: 5px;
-                    font-size: 8px;
-                }
-            }
-        }
-
-
-        .InfoLogement2Container{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: row-reverse;
-    
-    
-            .InfoLogement2{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-top: 20px;
-                margin-right: 20px;
-                gap: 5px;
-                .hostImg{
-                    width: 42px;
-                    height: 42px;
-                }
-                .host{
-                    line-height: 17.11px;
-                    font-size: 14px;
-                }
-            }
-    
-            .Rating{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                transform: scale(0.7);
-                padding-top: 20px;
-                
-            }
-        }
-    }
-}
+        margin-left: 8%;
         
-@media (min-width:426px) and (max-width:768px){
-    .InfoLogementHost{
-        .InfoLogementContainer{
-            h1{
-                font-size: 18px;
-            }
-            p{
-                font-size: 14px;
-            }
-            .tagsContainer{
-                flex-direction: row;
-                gap: 10px;
-                .tags{
-                    padding: 5px 15px;
-                    font-size: 12px;
-                }
-            }
-        }
-
-
-        .InfoLogement2Container{
-            display: flex;
-            justify-content: end;
+        .InfoLogementContainer {
+            font-weight: 500;
             
-            margin-right: 10%;
-            align-items: end;
-            flex-direction: column;
-    
-    
-            .InfoLogement2{
-                display: flex;
-                justify-content: end;
-                align-items: center;
-                margin-top: 20px;
-                margin-right: 20px;
-                gap: 5px;
-                .hostImg{
-                    width: 50px;
-                    height: 50px;
-                }
-                .host{
-                    line-height: 17.11px;
-                    font-size: 16px;
-                }
-            }
-    
-            .Rating{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                transform: scale(1);
-                padding-top: 20px;
-                
-            }
-        }
-    }
-}
-@media (min-width:769px) and (max-width:1024px){
-    .InfoLogementHost{
-        .InfoLogementContainer{
-            h1{
-                font-size: 22px;
+            h1 {
+                font-size: 36px;
+                color: $primary-color;
+                font-weight: 500;
+                width: 60%;
+                margin-top: 5px;
+                margin-bottom: 5px;
             }
             p{
-                font-size: 16px;
+                font-size: 18px;
+                color: black;
+                font-weight: 500;
+                margin-top: 0;
             }
-            .tagsContainer{
-                flex-direction: row;
-                gap: 10px;
-                .tags{
-                    padding: 5px 30px;
-                    font-size: 16px;
-                }
-            }
-        }
-
-
-        .InfoLogement2Container{
-            display: flex;
-            position: absolute;
-            left: 70%;
-            margin-right: 10%;
-            flex-direction: column;
     
-    
-            .InfoLogement2{
+            
+            .tagsContainer {
                 display: flex;
-                justify-content: end;
-                align-items: center;
-                margin-top: 20px;
-                margin-right: 0;
-                gap: 5px;
-                .hostImg{
-                    width: 50px;
-                    height: 50px;
-                }
-                .host{
+                flex-direction: row;
+                gap: 2px;
+                .tag {
+                    font-size: 16px;
+                    text-align: center;
+                    align-items: center;
+                    color: white;
+                    padding: 5px 18px;
+                    border-radius: 10px;
                     white-space: nowrap;
-                    line-height: 17.11px;
-                    font-size: 14px;
+                    background: $primary-color;
+                    font-family: 'Montserrat';
+                    font-weight: 500;
+                    line-height: 15px;
                 }
             }
-    
-            .Rating{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                transform: scale(1);
-                padding-top: 20px;
-                
-            }
+        
         }
-    }
-}
-@media (min-width:1025px) and (max-width:1440px) {
-    .InfoLogementHost{
-        .InfoLogementContainer{
-            h1{
-                font-size: 22px;
-            }
-            p{
-                font-size: 16px;
-            }
-            .tagsContainer{
-                flex-direction: row;
-                gap: 10px;
-                .tags{
-                    padding: 5px 30px;
-                    font-size: 16px;
-                }
-            }
-        }
-
-
         .InfoLogement2Container{
-            display: flex;
             position: absolute;
             left: 75%;
-            margin-right: 10%;
+            top: 600px;
+            display: flex;
+            margin-top: 30px;
             flex-direction: column;
-    
+            align-items: center;
+            justify-content: center;
+            
+            align-items: center;
+            margin-right: 9%;
     
             .InfoLogement2{
+                position: relative;
+                bottom: 20px;
                 display: flex;
-                justify-content: end;
+                flex-direction: row;
                 align-items: center;
-                margin-top: 20px;
-                margin-right: 0;
-                gap: 5px;
-                .hostImg{
-                    width: 50px;
-                    height: 50px;
-                }
+                justify-content: center;
+                gap: 10px;
                 .host{
-                    white-space: nowrap;
-                    line-height: 17.11px;
-                    font-size: 14px;
+                    font-family: 'Montserrat';
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: $primary-color;
+                    text-align: end;
+                }
+                .hostImg {
+                    border-radius: 100px;
+                    height: 54px;
+                    width: auto;
                 }
             }
-    
             .Rating{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                transform: scale(1);
-                padding-top: 20px;
-                
+                position: relative;
+                top: 5px;
+                transform: scale(1.4);
             }
         }
     }
 }
-@media (min-width:1441px) {
+
+@media (min-width:1440px){
     .InfoLogementHost{
-        .InfoLogementContainer{
-            h1{
-                font-size: 22px;
-            }
-            p{
-                font-size: 16px;
-            }
-            .tagsContainer{
-                flex-direction: row;
-                gap: 10px;
-                .tags{
-                    padding: 5px 30px;
-                    font-size: 16px;
-                }
-            }
-        }
-
-
         .InfoLogement2Container{
-            display: flex;
-            position: absolute;
-            left: 75%;
-            margin-right: 10%;
-            flex-direction: column;
-    
-    
+            left: 78%;
             .InfoLogement2{
+                position: relative;
+                bottom: 20px;
                 display: flex;
-                justify-content: end;
+                flex-direction: row;
                 align-items: center;
-                margin-top: 20px;
-                margin-right: 0;
-                gap: 5px;
-                .hostImg{
-                    width: 50px;
-                    height: 50px;
-                }
+                justify-content: center;
+                gap: 10px;
                 .host{
-                    white-space: nowrap;
-                    line-height: 17.11px;
-                    font-size: 14px;
+                    font-family: 'Montserrat';
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: $primary-color;
+                    text-align: end;
+                }
+                .hostImg {
+                    border-radius: 100px;
+                    height: 74px;
+                    width: auto;
                 }
             }
-    
             .Rating{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                transform: scale(1);
-                padding-top: 20px;
-                
+                position: relative;
+                top: 5px;
+                transform: scale(2);
             }
         }
     }

@@ -3,12 +3,14 @@
 
 .LogementDropDownContainer {
     display: flex;
+    flex-direction: row;
     margin: auto;
     margin-bottom: 50px;
     width: $base-logement-width;
 
     > .DropDownContainer {
-        width: 80%;
+        width: 85%;
+        padding: 0 5px 0 5px;
     }
 
     .equipements {

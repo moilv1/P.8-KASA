@@ -9,7 +9,7 @@ function Logements() {
         <article className="card-container">
             {logementsjson &&
                 logementsjson.map((LogementJson, index) => (
-                    <Card_logements id={LogementJson.id} titre={LogementJson.title} index={index} src={LogementJson.cover}></Card_logements>
+                    <Card_logements id={LogementJson.id} titre={LogementJson.title} index={index} src={LogementJson.cover} key={LogementJson.id}></Card_logements>
                 ))
             }
         </article >
